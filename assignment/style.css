@@ -1,0 +1,238 @@
+
+
+body {
+  font-family: Arial;
+  /* transform:(translateZ(0));  */
+}
+
+.periodic {
+  position: relative;
+  height: 200px;
+  margin-right: -1px;
+  text-shadow: none;
+}
+
+.periodic-row {
+  clear: both;
+  height: 10%;
+}
+
+.cell {
+  float: left;
+  position: relative;
+  width: 6%;
+  height: 95%;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+
+.element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 1px;
+  right: 1px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  text-align: center;
+  cursor: default;
+  pointer-events: none;
+  transition:(all 200ms ease);
+
+  background-color: rgba(0, 128, 128, 0.6);
+}
+
+
+
+.at_num,
+.at_details {
+  position: absolute;
+  font-size: 20px;
+  color: black;
+  opacity: 0;
+}
+
+.at_num {
+  top: 4px;
+  right: 50%;
+}
+
+.symbol {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  margin-top: -4px;
+  font-size: 12px;
+  line-height: 1;
+  height: 9px;
+  color: black;
+}
+
+.at_details {
+  bottom: 4px;
+  left: 0px;
+  right: 0px;
+}
+
+
+.cell:nth-child(-n + 2) .element,
+.cell:nth-child(n + 13) .element {
+  background-color: rgba(0, 160, 96, 0.6);
+}
+
+.cell:nth-child(1) .element,
+.periodic-row:nth-child(2) .cell:nth-child(n + 14) .element,
+.periodic-row:nth-child(3) .cell:nth-child(n + 15) .element,
+.periodic-row:nth-child(4) .cell:nth-child(n + 16) .element,
+.periodic-row:nth-child(5) .cell:nth-child(n + 17) .element {
+  background-color: rgba(0, 192, 64, 0.6);
+}
+
+@media (min-width: 600px) {
+  .periodic {
+    height: 460px;
+    margin-right: -2px;
+  }
+
+  .element {
+    right: 2px;
+    bottom: 2px;
+  }
+
+  .at_num,
+  .at_details {
+    font-size: 6px;
+    opacity: 1;
+  }
+
+  .symbol {
+    margin-top: -17px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    height: 30px;
+    color: black;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  }
+}
+
+
+@media (min-width: 800px) {
+  .periodic {
+    height: 540px;
+  }
+
+  .symbol {
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .periodic {
+    height: 680px;
+  }
+
+  .at_num,
+  .at_details {
+    font-size: 5px;
+  }
+
+  .symbol {
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .periodic {
+    height: 800px;
+  }
+
+  .at_num,
+  .at_details {
+    font-size: 9px;
+  }
+
+  .symbol {
+    font-size: 30px;
+  }
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    padding-left: 0px;
+    /* left: 100px; */
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /*Fallback color*/
+    background-color: rgba(0,0,0,0.4); /*Black opacity*/
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #2a91cc;
+    margin: auto ;
+    padding: 0;
+    border: 1px solid #888;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+#header{
+  margin: 10px 5px 0px 0px;
+}
+.close:hover,
+.close:focus {
+    /* color: #000; */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 1px;
+    background-color: #120862;
+    color: white;
+    font-size: 13px;
+    height: 30px;
+    text-align: center;
+}
+
+.modal-body {padding: 2px 16px;
+text-align: center;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}

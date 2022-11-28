@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Periodic Table</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    
+
+<div class="periodic">
+    <div class="periodic-row">
+      <div class="cell" style="cursor: pointer;" onclick="myFunction('1','H' ,'Hydrogen', '1.008')" >
+        <div class="element">
+          <div class="at_num">1</div>
+          <div  class="symbol">H</div>
+          <div  class="at_details">hydrogen<br />1.008</div>
+        </div>
+      </div>
+      
+      
+     
+    </div>
+    <div class="periodic-row">
+      <div class="cell" style="cursor: pointer;" onclick="myFunction('3', 'Li' ,'lithium','6.94')">
+        <div class="element">
+          <div class="at_num">3</div>
+          <div class="symbol">Li</div>
+          <div class="at_details">lithium<br />6.94</div>
+        </div>
+      </div>
+      <div class="cell" style="cursor: pointer;" onclick="myFunction('4', 'Be' ,'beryllium','9.0122')">
+        <div class="element">
+          <div class="at_num">4</div>
+          <div class="symbol">Be</div>
+          <div class="at_details">beryllium<br />9.0122</div>
+        </div>
+      </div>
+    </div>
+    <div class="periodic-row">
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('11', 'Na' ,'sodium','22.990')">
+        <div class="element">
+          <div class="at_num">11</div>
+          <div class="symbol">Na</div>
+          <div class="at_details">sodium<br />22.990</div>
+        </div>
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('12', 'Mg' ,'magnesium','24.305')">
+        <div class="element">
+          <div class="at_num">12</div>
+          <div class="symbol">Mg</div>
+          <div class="at_details">magnesium<br />24.305</div>
+        </div>
+      </div>
+    </div>
+    <div class="periodic-row">
+      <div class="cell" style="cursor: pointer;" onclick="myFunction('19','K' ,'potassium', '39.098')">
+        <div class="element">
+          <div class="at_num">19</div>
+          <div class="symbol">K</div>
+          <div class="at_details">potassium<br />39.098</div>
+        </div>
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('20','Ca' ,'calcium', '40.088')">
+        <div class="element">
+          <div class="at_num">20</div>
+          <div class="symbol">Ca</div>
+          <div class="at_details">calcium<br />40.078</div>
+        </div>
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('21','Sc' ,'scandium', '44.956')">
+        <div class="element">
+          <div class="at_num">21</div>
+          <div class="symbol">Sc</div>
+          <div class="at_details">scandium<br />44.956</div>
+        </div>
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('22','Ti' ,'titanium', '47.867')">
+        <div class="element">
+          <div class="at_num">22</div>
+          <div class="symbol">Ti</div>
+          <div class="at_details">titanium<br />47.867</div>
+        </div>
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('23','V' ,'vanadium', '50.942')">
+        <div class="element">
+          <div class="at_num">23</div>
+          <div class="symbol">V</div>
+          <div class="at_details">vanadium<br />50.942</div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="periodic-row" >
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('37','Rb' ,'rubidium', '85.468')">
+        <div class="element">
+          <div class="at_num">37</div>
+          <div class="symbol">Rb</div>
+          <div class="at_details">rubidium<br />85.468</div>
+        </div>
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('38','Sr' ,'sdivontium', '87.62')">
+        <div class="element">
+          <div class="at_num">38</div>
+          <div class="symbol">Sr</div>
+          <div class="at_details">sdivontium<br />87.62</div>
+        </div>
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('39','Y' ,'ytdivium', '88.906')">
+        <div class="element">
+          <div class="at_num">39</div>
+          <div class="symbol">Y</div>
+          <div class="at_details">ytdivium<br />88.906</div>
+        </div>
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('40','Zr' ,'zirconium', '91.224')">
+        <div class="element">
+          <div class="at_num">40</div>
+          <div class="symbol">Zr</div>
+          <div class="at_details">zirconium<br />91.224</div>
+        </div>
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('41','Nb' ,'niobium', '92.906')">
+        <div class="element">
+          <div class="at_num">41</div>
+          <div class="symbol">Nb</div>
+          <div class="at_details">niobium<br />92.906</div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="periodic-row">
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('55','Cs' ,'cesium', '132.91')">
+        <div class="element">
+          <div class="at_num">55</div>
+          <div class="symbol">Cs</div>
+          <div class="at_details">cesium<br />132.91</div>
+        </div>
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('56','Ba' ,'barium', '137.33')">
+        <div class="element">
+          <div class="at_num">56</div>
+          <div class="symbol">Ba</div>
+          <div class="at_details">barium<br />137.33</div>
+        </div>
+      </div>
+      <div class="cell">        
+        <div class="symbol"><center>*</center></div>        
+    </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('72','Hf' ,'hafnium', '178.49')">
+        <div class="element">
+          <div class="at_num">72</div>
+          <div class="symbol">Hf</div>
+          <div class="at_details">hafnium<br />178.49</div>
+        </div>
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('73','Ta' ,'tantalum', '180.95')">
+        <div class="element">
+          <div class="at_num">73</div>
+          <div class="symbol">Ta</div>
+          <div class="at_details">tantalum<br />180.95</div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="periodic-row">
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('87','Fr' ,'francium', '223.02')">
+        <div class="element">
+          <div class="at_num">87</div>
+          <div class="symbol">Fr</div>
+          <div class="at_details">francium<br />[223.02]</div>
+        </div>
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('88','Ra' ,'radium', '226.03')">
+        <div class="element">
+          <div class="at_num">88</div>
+          <div class="symbol">Ra</div>
+          <div class="at_details">radium<br />[226.03]</div>
+        </div>
+      </div>
+      <div class="cell">        
+          <div class="symbol"><center>**</center></div>        
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('104','Rf' ,'rutherfordium', '265.12')">
+        <div class="element">
+          <div class="at_num">104</div>
+          <div class="symbol">Rf</div>
+          <div class="at_details">rutherfordium<br />[265.12]</div>
+        </div>
+      </div>
+      <div class="cell"  style="cursor: pointer;" onclick="myFunction('105','Db' ,'dubnium', '268.13')">
+        <div class="element">
+          <div class="at_num">105</div>
+          <div class="symbol">Db</div>
+          <div class="at_details">dubnium<br />[268.13]</div>
+        </div>
+      </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="header" style="float:center;"></h3>
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <!-- <span class="close">&times;</span> -->
+      <h3 id="name"></h3>
+      <h3 id="name1"></h3>
+      <h3 id="name2"></h3>
+    </div>
+  
+  </div>
+
+</div>
+    </body>
+<script type="text/javascript" src="script.js"></script>
+</html>
